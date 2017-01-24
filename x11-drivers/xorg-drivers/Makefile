@@ -35,7 +35,6 @@ VIDEO_DRIVERS=		mach64 \
 			ark \
 			chips \
 			dummy \
-			fbdev \
 			glint \
 			i128 \
 			i740 \

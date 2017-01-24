@@ -1,5 +1,14 @@
 --- src/ssl.c.orig	2014-10-17 14:50:34 UTC
 +++ src/ssl.c
+@@ -428,6 +428,8 @@ static unsigned long ssl_thread_id(void)
+     uint64_t tid;
+     pthread_threadid_np(NULL, &tid);
+     return (unsigned long)tid;
++#elif defined(__FreeBSD__)
++    return (unsigned long)pthread_getthreadid_np();
+ #elif defined(__linux__)
+     return (unsigned long)syscall(SYS_gettid);
+ #else
 @@ -524,12 +524,14 @@ static int ssl_rand_load_file(const char
      if (file == NULL)
          file = RAND_file_name(buffer, sizeof(buffer));
