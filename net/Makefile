@@ -363,7 +363,7 @@
     SUBDIR += librdkafka
     SUBDIR += librouteros
     SUBDIR += librsync
-    SUBDIR += librsync1
+    SUBDIR += librsync2
     SUBDIR += libsocket++
     SUBDIR += libsocketcpp
     SUBDIR += libsrtp
@@ -923,6 +923,7 @@
     SUBDIR += php70-soap
     SUBDIR += php70-sockets
     SUBDIR += php70-xmlrpc
+    SUBDIR += php71-ldap
     SUBDIR += php71-soap
     SUBDIR += php71-sockets
     SUBDIR += php71-xmlrpc
@@ -974,6 +975,7 @@
     SUBDIR += py-gspread
     SUBDIR += py-gspreadsheet
     SUBDIR += py-haproxy-log-analysis
+    SUBDIR += py-httpstat
     SUBDIR += py-impacket
     SUBDIR += py-ipaddress
     SUBDIR += py-iplib
@@ -1121,10 +1123,6 @@
     SUBDIR += rtpbreak
     SUBDIR += rtpproxy
     SUBDIR += rtptools
-    SUBDIR += ruby-dict
-    SUBDIR += ruby-icmp
-    SUBDIR += ruby-tcpsocketpipe
-    SUBDIR += ruby-tserver
     SUBDIR += rubygem-amazon-ec2
     SUBDIR += rubygem-amq-protocol
     SUBDIR += rubygem-amqp

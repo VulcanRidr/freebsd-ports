@@ -45,6 +45,10 @@ OPTIONS_EXCLUDE_mips=FPM
 OPTIONS_EXCLUDE_mips64=FPM
 OPTIONS_SUB=	yes
 
+OPTIONS_EXCLUDE_DragonFly=	DTRACE
+# ld(1) fails to link probes: Relocations in generic ELF (EM: 0)
+OPTIONS_EXCLUDE_aarch64=	DTRACE
+
 CLI_DESC=	Build CLI version
 CGI_DESC=	Build CGI version
 FPM_DESC=	Build FPM version
@@ -95,8 +99,8 @@ CONFIGURE_ARGS+=--with-apxs2=${APXS}
 .endif
 PLIST=		${PKGDIR}/pkg-plist.mod
 PKGMESSAGE=	${PKGDIR}/pkg-message.mod
-MODULENAME=	libphp71
-SHORTMODNAME=	php71
+MODULENAME=	libphp7
+SHORTMODNAME=	php7
 WARNING=	"!!! If you have a threaded Apache, you must build ${PHP_PORT} with ZTS support to enable thread-safety in extensions !!!"
 .endif
 

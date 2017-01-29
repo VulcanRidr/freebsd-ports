@@ -2,8 +2,7 @@
 # $FreeBSD: head/security/openssl/Makefile 350548 2014-04-07 21:46:40Z bdrewery $
 
 PORTNAME=	openssl
-PORTVERSION=	1.0.2j
-PORTREVISION=	1
+PORTVERSION=	1.0.2k
 PORTEPOCH=	1
 CATEGORIES=	security devel
 MASTER_SITES=	http://www.openssl.org/source/ \

@@ -642,6 +642,7 @@
     SUBDIR += mtxorbd
     SUBDIR += multitail
     SUBDIR += munin-common
+    SUBDIR += munin-contrib
     SUBDIR += munin-master
     SUBDIR += munin-node
     SUBDIR += muse
@@ -935,7 +936,6 @@
     SUBDIR += rsyncrypto
     SUBDIR += rsyslog8
     SUBDIR += rtty
-    SUBDIR += ruby-quota
     SUBDIR += rubygem-SyslogLogger
     SUBDIR += rubygem-backup
     SUBDIR += rubygem-bosh-gen

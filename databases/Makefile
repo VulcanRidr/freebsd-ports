@@ -634,6 +634,7 @@
     SUBDIR += php70-sqlite3
     SUBDIR += php71-dba
     SUBDIR += php71-interbase
+    SUBDIR += php71-memcache
     SUBDIR += php71-mysqli
     SUBDIR += php71-odbc
     SUBDIR += php71-pdo
@@ -644,6 +645,7 @@
     SUBDIR += php71-pdo_pgsql
     SUBDIR += php71-pdo_sqlite
     SUBDIR += php71-pgsql
+    SUBDIR += php71-redis
     SUBDIR += php71-sqlite3
     SUBDIR += phpminiadmin
     SUBDIR += phpmyadmin
@@ -861,14 +863,10 @@
     SUBDIR += rrdtool
     SUBDIR += rrdtool12
     SUBDIR += ruby-bdb
-    SUBDIR += ruby-cdb
     SUBDIR += ruby-gdbm
     SUBDIR += ruby-mysql
-    SUBDIR += ruby-o_dbm
     SUBDIR += ruby-odbc
     SUBDIR += ruby-qdbm
-    SUBDIR += ruby-rdbc1
-    SUBDIR += ruby-sybct
     SUBDIR += ruby-tokyocabinet
     SUBDIR += rubygem-activemodel4
     SUBDIR += rubygem-activemodel5

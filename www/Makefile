@@ -481,6 +481,7 @@
     SUBDIR += mod_perl2
     SUBDIR += mod_php56
     SUBDIR += mod_php70
+    SUBDIR += mod_php71
     SUBDIR += mod_proctitle
     SUBDIR += mod_proxy_html
     SUBDIR += mod_proxy_uwsgi
@@ -1906,7 +1907,6 @@
     SUBDIR += rt44
     SUBDIR += rtv
     SUBDIR += ruby-aws
-    SUBDIR += ruby-google
     SUBDIR += rubygem-ace-rails-ap
     SUBDIR += rubygem-actioncable5
     SUBDIR += rubygem-actionpack4

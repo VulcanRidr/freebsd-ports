@@ -1,8 +1,8 @@
 # $FreeBSD$
 
 PORTNAME=	pkgconf
-PORTVERSION=	1.2.0
-PORTREVISION=	2
+PORTVERSION=	1.2.1
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	https://distfiles.dereferenced.org/pkgconf/ \
 		http://files.etoilebsd.net/pkgconf/
@@ -12,7 +12,7 @@ COMMENT=	Utility to help to configure compiler and linker flags
 
 LICENSE=	ISCL
 
-USES=		tar:xz libtool
+USES=		tar:xz libtool pathfix
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
 USE_LDCONFIG=	yes

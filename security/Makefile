@@ -96,6 +96,7 @@
     SUBDIR += cryptlib
     SUBDIR += cryptopp
     SUBDIR += cvm
+    SUBDIR += cyberchef
     SUBDIR += cyrus-sasl2
     SUBDIR += cyrus-sasl2-gssapi
     SUBDIR += cyrus-sasl2-ldapdb
@@ -987,9 +988,6 @@
     SUBDIR += rkhunter
     SUBDIR += rndpassw
     SUBDIR += ruby-camellia
-    SUBDIR += ruby-hmac
-    SUBDIR += ruby-password
-    SUBDIR += ruby-tcpwrap
     SUBDIR += rubygem-airbrussh
     SUBDIR += rubygem-attr_encrypted
     SUBDIR += rubygem-bcrypt
