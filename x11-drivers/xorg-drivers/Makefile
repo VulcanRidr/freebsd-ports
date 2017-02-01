@@ -33,6 +33,7 @@ VIDEO_DRIVERS=		mach64 \
 			amdgpu \
 			apm \
 			ark \
+			ast \
 			chips \
 			dummy \
 			glint \

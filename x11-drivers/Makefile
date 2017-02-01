@@ -21,6 +21,7 @@
     SUBDIR += xf86-video-amdgpu
     SUBDIR += xf86-video-apm
     SUBDIR += xf86-video-ark
+    SUBDIR += xf86-video-ast
     SUBDIR += xf86-video-ati
     SUBDIR += xf86-video-chips
     SUBDIR += xf86-video-cirrus
