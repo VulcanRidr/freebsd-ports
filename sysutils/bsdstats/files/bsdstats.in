@@ -4,4 +4,4 @@
 name=bsdstats
 
 command=%%PREFIX%%/etc/periodic/monthly/300.statistics
-command_args="-nodelay"
+command_args="-nodelay >/dev/null 2>/dev/null &"
