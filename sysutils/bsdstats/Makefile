@@ -13,7 +13,7 @@ COMMENT=	Monthly script for reporting anonymous statistics about your machine
 LICENSE=	BSD4CLAUSE
 
 NO_BUILD=	yes
-USE_RC_SUBR=	bsdstats
+USE_OPENRC_SUBR=	bsdstats
 SUB_FILES=	300.statistics bsdstats-send pkg-message
 SUB_LIST+=	VERSION=${PORTVERSION}
 NO_ARCH=	YES
