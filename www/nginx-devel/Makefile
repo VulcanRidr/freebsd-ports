@@ -3,6 +3,7 @@
 
 PORTNAME=	nginx
 PORTVERSION=	1.11.9
+PORTREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	http://nginx.org/download/
 MASTER_SITES+=	LOCAL/osa
@@ -439,10 +440,10 @@ EXTRA_PATCHES+=	${PATCHDIR}/extra-patch-src-c-ngx_http_clojure_socket.c
 .endif
 
 .if ${PORT_OPTIONS:MCT}
-GIT_CT_VERSION=	f3cad5e
+GIT_CT_VERSION=	1.3.2
 GH_ACCOUNT+=	grahamedgecombe:ct
 GH_PROJECT+=	nginx-ct:ct
-GH_TAGNAME+=	${GIT_CT_VERSION}:ct
+GH_TAGNAME+=	v${GIT_CT_VERSION}:ct
 .if !empty(PORT_OPTIONS:MDSO)
 CONFIGURE_ARGS+=--add-dynamic-module=${WRKSRC_ct}
 .else
@@ -450,6 +451,9 @@ CONFIGURE_ARGS+=--add-module=${WRKSRC_ct}
 .endif
 NGINX_OPENSSL=	yes
 USE_HTTP_SSL=	yes
+.if ${OPSYS} == FreeBSD && ${OSVERSION} < 1100085 && ${SSL_DEFAULT} == base
+IGNORE=		CT option requires OpenSSL 1.0.2, add DEFAULT_VERSIONS+=ssl=openssl to /etc/make.conf
+.endif
 .endif
 
 .if ${PORT_OPTIONS:MECHO}
@@ -1062,7 +1066,7 @@ CONFIGURE_ARGS+=--with-http_v2_module
 .if ${PORT_OPTIONS:MNJS}
 GH_ACCOUNT+=	nginx:njs
 GH_PROJECT+=	njs:njs
-GH_TAGNAME+=	f8c642a:njs
+GH_TAGNAME+=	f106743:njs
 .if !empty(PORT_OPTIONS:MDSO)
 CONFIGURE_ARGS+=--add-dynamic-module=${WRKSRC_njs}/nginx
 .else
@@ -1173,10 +1177,7 @@ USERS?=	${WWWOWN}
 GROUPS?=${WWWGRP}
 
 .if defined(NGINX_OPENSSL)
-USE_OPENSSL=	yes
-.if ${OPSYS} == FreeBSD && ${OSVERSION} < 1100000
-WITH_OPENSSL_PORT=yes
-.endif
+USES+=		ssl
 .endif
 
 pre-everything::

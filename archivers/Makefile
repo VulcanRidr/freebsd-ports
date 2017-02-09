@@ -23,6 +23,7 @@
     SUBDIR += dzip
     SUBDIR += ecm
     SUBDIR += engrampa
+    SUBDIR += erlang-snappy
     SUBDIR += fastjar
     SUBDIR += file-roller
     SUBDIR += fpc-bzip2
@@ -191,6 +192,7 @@
     SUBDIR += rubygem-archive-tar-minitar
     SUBDIR += rubygem-archive-zip
     SUBDIR += rubygem-bzip2-ruby
+    SUBDIR += rubygem-fpm
     SUBDIR += rubygem-libarchive
     SUBDIR += rubygem-minitar
     SUBDIR += rubygem-ruby-xz

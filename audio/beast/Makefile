@@ -76,4 +76,4 @@ post-patch:
 		's|-DG_DISABLE_DEPRECATED||' ${WRKSRC}/bse/Makefile.am \
 		${WRKSRC}/bse/Makefile.in
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
