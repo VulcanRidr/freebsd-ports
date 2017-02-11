@@ -11,12 +11,9 @@
  *)
 @@ -1540,6 +1548,19 @@
          ;;
--    *freebsd* | dragonfly* | *netbsd* | openbsd*)
-+    *netbsd* | openbsd* | dragonfly*)
+     gnu*)
          DEFINES="$DEFINES -DHAVE_ALIAS"
-         ;;
-+    *freebsd*)
-+        DEFINES="$DEFINES -DHAVE_ALIAS"
++dnl not sure about dri3 support, just enable it for now.
 +        if test "x$enable_dri3" = xyes; then
 +            DEFINES="$DEFINES -DHAVE_DRI3"
 +        fi
@@ -29,9 +26,6 @@
 +            fi
 +            ;;
 +        esac
-+        ;;
-     gnu*)
-         DEFINES="$DEFINES -DHAVE_ALIAS"
          ;;
      cygwin*)
          if test "x$with_dri_drivers" = "xyes"; then
