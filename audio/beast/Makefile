@@ -53,6 +53,8 @@ BROKEN_powerpc64=	Does not build
 
 MAKE_JOBS_UNSAFE=	yes
 
+.include <bsd.port.pre.mk>
+
 .if ${ARCH} != amd64 && ${ARCH} != i386
 SSE_FLAGS=
 SSE_VARS=
