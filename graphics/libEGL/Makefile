@@ -10,7 +10,6 @@ COMMENT=	OpenEGL library
 
 LIB_DEPENDS+=	libpthread-stubs.so:devel/libpthread-stubs \
 		libexpat.so:textproc/expat2 \
-		libdevq.so:devel/libdevq \
 		libdrm.so:graphics/libdrm
 
 OPTIONS_DEFINE_amd64=	DRI3
@@ -21,7 +20,7 @@ USE_GL=		gbm
 USE_XORG=	x11 xau xcb xdmcp
 
 # stuff not needed by libEGL but configure wants it
-USE_XORG+=	glproto dri2proto xext xdamage xfixes presentproto \
+USE_XORG+=	dri2proto dri3proto glproto presentproto xdamage xext xfixes \
 		xshmfence
 
 .include <bsd.port.options.mk>
