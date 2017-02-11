@@ -469,7 +469,7 @@ disable_token() {
 report_system() {
   local REL=$(${UNAME} -r)
   local ARCH=$(${UNAME} -m)
-  local OS=$(${UNAME} -s)
+  local OS="TrueOS"
   echo_begin "Posting OS statistics to ${checkin_server_description}"
   do_http_request_check_status "GET" "/scripts/report_system.php?token=${TOKEN}&key=${KEY}&rel=${REL}&arch=${ARCH}&opsys=${OS}" \
     "" "" "OS statistics submission"
