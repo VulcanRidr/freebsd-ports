@@ -1,0 +1,16 @@
+#!/sbin/openrc-run
+
+minio_config="${minio_config-%%PREFIX%%/etc/minio}"
+minio_disks="${minio_disks}"
+minio_address="${minio_address-:9000}"
+
+name=minio
+pidfile="/var/run/${name}.pid"
+command="/usr/sbin/daemon"
+command_args="-c -f -p ${pidfile} /usr/local/bin/${name} -C \"${minio_config}\" server --address=\"${minio_address}\" ${minio_disks}"
+
+depend()
+{
+	need localmount
+	use net
+}
