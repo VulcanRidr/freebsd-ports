@@ -1,7 +1,22 @@
 #!/sbin/openrc-run
-#
 
 name=bsdstats
 
-command=%%PREFIX%%/etc/periodic/monthly/300.statistics
-command_args="-nodelay >/dev/null 2>/dev/null &"
+depend()
+{
+	need localmount
+	use net
+	keyword -stop -shutdown
+}
+
+start()
+{
+  ebegin "Starting $name"
+  start-stop-daemon -b -m -p /var/run/bsdstats.pid --start %%PREFIX%%/etc/periodic/monthly/300.statistics
+  eend $?
+}
+
+stop()
+{
+  return 0
+}
