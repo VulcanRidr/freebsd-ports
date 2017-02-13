@@ -19,7 +19,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	hashicorp
 GH_SUBDIR=	src/github.com/${GH_ACCOUNT}/${PORTNAME}
 
-USE_RC_SUBR=	consul
+USE_OPENRC_SUBR=	consul
 
 USERS=		consul
 GROUPS=		consul
