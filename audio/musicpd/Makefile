@@ -18,7 +18,7 @@ USES=		compiler:c++14-lang gmake pkgconfig tar:xz
 GNU_CONFIGURE=	yes
 USE_GNOME=	glib20
 
-USE_RC_SUBR=	${PORTNAME}
+USE_OPENRC_SUBR=${PORTNAME}
 CONFIGURE_ARGS+=--disable-alsa --disable-systemd-daemon --disable-roar
 CFLAGS+=	-I${PREFIX}/include
 CPPFLAGS+=	-I${LOCALBASE}/include
