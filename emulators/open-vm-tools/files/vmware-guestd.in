@@ -1,16 +1,7 @@
-#!/bin/sh
-#
-# $FreeBSD$
-#
-
-# PROVIDE: vmware-guestd
-# REQUIRE: DAEMON netif
-# BEFORE: LOGIN
-
-. /etc/rc.subr
+#!/sbin/openrc-run
 
 # Global
-checkvm_cmd="%%PREFIX%%/bin/vmware-checkvm > /dev/null"
+checkvm_cmd="/usr/local/bin/vmware-checkvm > /dev/null"
 
 # VMware guest daemon
 name="vmware_guestd"
@@ -19,11 +10,9 @@ start_precmd="${checkvm_cmd}"
 unset start_cmd
 stop_precmd="${checkvm_cmd}"
 unset stop_cmd
-command="%%PREFIX%%/bin/vmtoolsd"
-command_args="-c %%PREFIX%%/share/vmware-tools/tools.conf -p %%PREFIX%%/lib/open-vm-tools/plugins/vmsvc"
+command="/usr/local/bin/vmtoolsd"
+command_args="-c /usr/local/share/vmware-tools/tools.conf -p /usr/local/lib/open-vm-tools/plugins/vmsvc"
 pidfile="/var/run/${name}.pid"
 
-load_rc_config $name
 [ -z "$vmware_guestd_enable" ] && vmware_guestd_enable="YES"
 [ -z "$vmware_guestd_flags" ] && vmware_guestd_flags="--background ${pidfile}"
-run_rc_command "$1"

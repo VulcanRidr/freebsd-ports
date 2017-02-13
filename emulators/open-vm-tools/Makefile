@@ -54,7 +54,7 @@ CONFIGURE_ARGS+=	--without-procps --sysconfdir=${LOCALBASE}/etc
 CONFLICTS+=		vmware-guestd[0-9]* vmware-tools[0-9]*
 SUB_FILES=		pkg-message
 
-USE_RC_SUBR=		vmware-guestd vmware-kmod
+USE_OPENRC_SUBR=	vmware-guestd vmware-kmod
 
 .include <bsd.port.options.mk>
 
