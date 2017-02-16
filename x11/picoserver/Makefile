@@ -18,7 +18,7 @@ PLIST_FILES=	bin/pico-server
 
 NO_BUILD=	yes
 USES=		tar:xz
-USE_OPENRC_SUBRC=	picoserver
+USE_OPENRC_SUBR=	picoserver
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/pico-server ${STAGEDIR}${PREFIX}/bin
