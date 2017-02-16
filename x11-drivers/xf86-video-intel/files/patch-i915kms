@@ -8,12 +8,3 @@
  	"i915",
  	NULL,
  };
-@@ -425,7 +429,7 @@
- 		 pci->domain, pci->bus, pci->dev, pci->func);
- 
- 	ret = drmCheckModesettingSupported(id);
--	if (ret) {
-+	if (ret || 1) {
- 		if (load_i915_kernel_module() == 0)
- 			ret = drmCheckModesettingSupported(id);
- 		if (ret)

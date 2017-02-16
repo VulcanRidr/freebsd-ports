@@ -32,7 +32,7 @@ include/xorg/dixgrabs.h
 include/xorg/dixstruct.h
 include/xorg/dri.h
 include/xorg/dri2.h
-%%DRI3%%include/xorg/dri3.h
+include/xorg/dri3.h
 include/xorg/dristruct.h
 include/xorg/edid.h
 include/xorg/events.h
@@ -159,6 +159,7 @@ include/xorg/xkbstr.h
 include/xorg/xorg-server.h
 include/xorg/xorgVersion.h
 include/xorg/xserver-properties.h
+@comment include/xorg/xserver_poll.h
 include/xorg/xvdix.h
 include/xorg/xvmcext.h
 lib/xorg/modules/drivers/modesetting_drv.so
