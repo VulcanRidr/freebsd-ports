@@ -36,13 +36,8 @@ USES=		compiler:c++11-lib cmake cpe desktop-file-utils \
 USE_XORG=	x11
 INSTALLS_ICONS=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include
-<<<<<<< HEAD
-LDFLAGS+=	-L${LOCALBASE}/lib -L${LOCALBASE}/llvm39/lib
-CONFIGURE_ARGS=	--without-gnome-vfs
-=======
 LDFLAGS+=	-L${LOCALBASE}/lib
 CMAKE_ARGS+=	-DWITH_GNOME_VFS:BOOL=NO
->>>>>>> adafdf9a5725ce9dd89c83dd8668f4d6d798cab8
 
 python_CMD?=	${LOCALBASE}/bin/python2
 SHEBANG_FILES=	cxxtest/cxxtestgen.pl share/extensions/*.p[lm] \
