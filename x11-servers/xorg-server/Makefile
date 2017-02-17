@@ -21,7 +21,7 @@ XORG_CAT=	xserver
 SLAVE_PORT?=	no
 
 OPTIONS_SUB=	yes
-OPTIONS_DEFINE=	SUID 
+OPTIONS_DEFINE=	SUID
 OPTIONS_RADIO=	CONF
 OPTIONS_RADIO_CONF=	DEVD HAL
 DEVD_DESC=	Use devd for autoconfiguration of input devices
@@ -65,13 +65,6 @@ CONFIGURE_ARGS+=--disable-xorg
 # for slave ports we need to overwrite PLIST, so it doesn't overwrite
 # PLIST_FILES, with the masterport plist.
 PLIST=		${.CURDIR}/pkg-plist
-.endif
-
-.if ${PORT_OPTIONS:MDRI3}
-USE_XORG+=	dri3proto
-CONFIGURE_ARGS+=	 --enable-dri3 
-.else
-CONFIGURE_ARGS+=	 --disable-dri3 
 .endif
 
 .include <bsd.port.pre.mk>
