@@ -1,33 +1,15 @@
-#! /bin/sh
-
-# $FreeBSD$
+#!/sbin/openrc-run
 #
-# PROVIDE: dhcpd
-# REQUIRE: DAEMON
-# BEFORE: LOGIN
-# KEYWORD: shutdown
-#
-# Add the following line to /etc/rc.conf to enable dhcpd:
-#
-# dhcpd_enable="YES"
 
-. /etc/rc.subr
+depend()
+{
+	need localmount
+	use net
+	keyword -shutdown -stop
+}
 
-case $0 in
-/etc/rc*)
-	# during boot (shutdown) $0 is /etc/rc (/etc/rc.shutdown),
-	# so get the name of the script from $_file
-	name=$_file
-	;;
-*)
-	name=$0
-	;;
-esac
-
-name=${name##*/isc-}
-paranoia=%%PARANOIA%%				# compiled in paranoia?
-
-load_rc_config ${name}
+name=dhcpd
+paranoia=yes				# compiled in paranoia?
 
 # override these variables in /etc/rc.conf
 eval ": \${${name}_enable:=\"NO\"}"
@@ -36,7 +18,7 @@ eval ": \${${name}_enable:=\"NO\"}"
 eval ": \${${name}_conf:=%%PREFIX%%/etc/${name}.conf}"	# configuration file
 eval ": \${${name}_withumask:=022}"			# file creation mask
 
-eval ": \${${name}_chuser_enable:=\"%%PARANOIA%%\"}"	# runs w/o privileges?
+eval ": \${${name}_chuser_enable:=\"yes\"}"	# runs w/o privileges?
 eval ": \${${name}_withuser:=dhcpd}"			# user name to run as
 eval ": \${${name}_withgroup:=dhcpd}"			# group name to run as
 
@@ -54,10 +36,9 @@ safe_run ()	# rc command [args...]
 	shift
 
 	if [ "${_rc}" -eq 0 ]; then
-		debug safe_run: "$@"
 		"$@" || _rc=1
 	else
-		warn safe_run: "$@"
+		ewarn safe_run: "$@"
 	fi
 	return ${_rc}
 }
@@ -71,7 +52,6 @@ precious ()	# entry...
 		# do nothing if /dev, /var/run or /var/db
 		echo ${_entry} | egrep -q '^//*(dev|var//*(run|db))?/*$' || _rc=1
 	done
-	debug precious: "$@" rc=${_rc}
 	return ${_rc}
 }
 
@@ -89,7 +69,6 @@ lsmod ()	# user group file...
 		    exit ((u && $3 != u) || (g && $4 != g))
 		}' || _rc=1
 	done
-	debug lsmod: "$@" rc=${_rc}
 	return ${_rc}
 }
 
@@ -111,7 +90,7 @@ safe_chmog ()	# entry...
 			   ! precious ${_entry} &&
 			   ! lsmod ${_user} ${_group} ${_entry} &&
 			   ! safe_run ${_rc} chown ${_usergroup} ${_entry}; then
-				warn "unable to change permissions of ${_entry}"
+				ewarn "unable to change permissions of ${_entry}"
 				_rc=1
 			fi
 		done
@@ -148,7 +127,7 @@ safe_rmdir ()	# dir...
 			if safe_run ${_rc} rmdir ${_dir}; then
 				safe_run ${_rc} safe_rmdir ${_dir%/*} || _rc=1
 			else
-				warn "unable to remove directory ${_dir}"
+				ewarn "unable to remove directory ${_dir}"
 				_rc=1
 			fi
 		fi
@@ -180,14 +159,14 @@ safe_remove ()	# entry...
 	for _entry; do
 		if [ -f ${_entry} ]; then
 			if ! safe_run ${_rc} rm -f ${_entry}; then
-				warn "unable to remove file ${_entry}"
+				ewarn "unable to remove file ${_entry}"
 				_rc=1
 			fi
 		elif [ -d ${_entry} ] &&
 		     ! precious ${_entry} &&
 		     ! mounted ${_entry}; then
 			if ! safe_run ${_rc} rm -rf ${_entry}; then
-				warn "unable to remove directory ${_entry}"
+				ewarn "unable to remove directory ${_entry}"
 				_rc=1
 			fi
 		fi
@@ -236,7 +215,6 @@ mounted ()	# dir...
 		    { for (i = 2; i != n; i++) if ($3 == ARGV[i]) exit 1 }
 		' - "$@" || _rc=0
 	fi
-	debug mounted: "$@" rc=${_rc}
 	return ${_rc}
 }
 
@@ -266,7 +244,7 @@ safe_umount ()	# dir
 	if checkyesno ${name}_devfs_enable &&
 	   mounted ${_dir} &&
 	   ! safe_run ${_rc} umount ${_dir}; then
-		warn "unable to unmount ${_dir}"
+		ewarn "unable to unmount ${_dir}"
 		_rc=1
 	fi
 	return ${_rc}
@@ -282,7 +260,7 @@ check_chuser ()
 		fi
 	else
 		if checkyesno ${name}_chuser_enable; then
-			warn "${name}_chuser_enable disabled -- not compiled in"
+			ewarn "${name}_chuser_enable disabled -- not compiled in"
 			eval "${name}_chuser_enable=NO"
 		fi
 	fi
@@ -301,7 +279,7 @@ check_chroot ()
 		fi
 	else
 		if checkyesno ${name}_chroot_enable; then
-			warn "${name}_chroot_enable disabled -- not compiled in"
+			ewarn "${name}_chroot_enable disabled -- not compiled in"
 			eval "${name}_chroot_enable=NO"
 		fi
 		eval "${name}_devfs_enable=NO"
@@ -436,6 +414,7 @@ setup_flags ()
 		eval "rc_flags=\"\${rc_flags} -chroot \${${name}_rootdir}\""
 	fi
 	eval "rc_flags=\"\${rc_flags} \${${name}_ifaces}\""
+	command_args="$rc_flags"
 }
 
 cleanup_chroot ()
@@ -466,7 +445,7 @@ dhcpd_rcvar ()
 	rcvar_rooted
 }
 
-dhcpd_precmd ()
+start_pre ()
 {
 	setup_umask
 	setup_chroot
@@ -475,12 +454,12 @@ dhcpd_precmd ()
 	setup_flags
 }
 
-dhcpd_postcmd ()
+start_post ()
 {
 	cleanup_chroot
 }
 
-dhcpd_restartprecmd ()
+restart_pre ()
 {
 	setup_chroot
 	setup_flags
@@ -501,8 +480,15 @@ dhcpd_checkconfig ()
         fi
 }
 
-rcvar=${name}_enable
-load_rc_config ${name}
+configtest()
+{
+	dhcpd_restartprecmd
+}
+
+uninstall()
+{
+	dhcpd_uninstall
+}
 
 __dhcpd_uninstall="NO"			# internal use only
 __dhcpd_devdir=/dev			# devices directory
@@ -511,17 +497,12 @@ __dhcpd_piddir=/var/run			# pid file directory
 __dhcpd_leasesdir=/var/db		# leases file directory
 #__dhcpd_rootdir=/var/db/${name}	# root directory
 
+#chroot="$dhcpd_chrootdir"
+
 dhcpd_check
 dhcpd_rcvar
 
 command=%%PREFIX%%/sbin/dhcpd
 pidfile=${_dhcpd_pidfile}
 eval "required_files=\${${name}_conf}"
-start_precmd=dhcpd_precmd
-stop_postcmd=dhcpd_postcmd
-restart_precmd="dhcpd_restartprecmd"
-uninstall_cmd=dhcpd_uninstall
-configtest_cmd="dhcpd_restartprecmd"
 extra_commands="uninstall configtest"
-
-run_rc_command "$1"

@@ -17,7 +17,7 @@ LICENSE=	ISCL
 
 USES=		gmake
 
-PORTREVISION_SERVER=	0
+PORTREVISION_SERVER=	1
 PORTREVISION_CLIENT=	0
 PORTREVISION_RELAY=	0
 
@@ -68,7 +68,7 @@ DESCR=		${.CURDIR}/pkg-descr
 PLIST=		${.CURDIR}/pkg-plist
 
 .if ${SUBSYS} == server
-USE_RC_SUBR=	isc-dhcpd
+USE_OPENRC_SUBR=	isc-dhcpd
 .elif ${SUBSYS} == relay
 USE_RC_SUBR=	isc-dhcrelay
 .endif
