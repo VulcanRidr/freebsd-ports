@@ -3,6 +3,7 @@
 
 PORTNAME=	tcpproxy
 PORTVERSION=	1.2
+PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://www.spreadspace.org/tcpproxy/releases/ \
 		http://alex.bmg.gv.at/programs/
@@ -21,7 +22,7 @@ HAS_CONFIGURE=	yes
 USERS=	_tcpproxy
 GROUPS=	_tcpproxy
 
-USE_RC_SUBR=	tcpproxy
+USE_OPENRC_SUBR=	tcpproxy
 
 WRKSRC=	${WRKDIR}/${PORTNAME}-${PORTVERSION}/src
 
