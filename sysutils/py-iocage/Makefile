@@ -3,6 +3,7 @@
 
 PORTNAME=	iocage
 PORTVERSION=	0.9.5
+PORTREVISION=	1
 CATEGORIES=	sysutils python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -25,5 +26,6 @@ USE_GITHUB=	yes
 NO_ARCH=	yes
 USES=		python:2
 USE_PYTHON=	autoplist distutils
+USE_OPENRC_SUBR=	iocage
 
 .include <bsd.port.mk>
