@@ -3,6 +3,7 @@
 
 PORTNAME=	miniupnpd
 PORTVERSION=	1.9.20160113
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	net
 MASTER_SITES=	http://miniupnp.tuxfamily.org/files/ \
@@ -18,7 +19,7 @@ CPE_VENDOR=	miniupnp_project
 PLIST_FILES=	etc/miniupnpd.conf.sample sbin/miniupnpd \
 		man/man8/miniupnpd.8.gz
 MAKE_JOBS_UNSAFE=yes
-USE_RC_SUBR=	miniupnpd
+USE_OPENRC_SUBR=	miniupnpd
 
 CFLAGS+=	-I${OPENSSLINC}
 LDFLAGS+=	-L${OPENSSLLIB}
