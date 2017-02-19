@@ -25,6 +25,10 @@ INSTALL_WRKSRC=	${BUILD_WRKSRC}
 QT_DEFINES=	LIBPROXY OPENSSL SSL
 QT_CONFIG=	libproxy openssl
 
+EXTRA_PATCHES+=	${FILESDIR}/patch-src_network_ssl_qsslcontext__openssl.cpp
+EXTRA_PATCHES+=	${FILESDIR}/patch-src_network_ssl_qsslsocket__openssl__symbols__p.h
+EXTRA_PATCHES+=	${FILESDIR}/patch-src_network_ssl_qsslsocket__openssl__symbols.cpp
+
 post-patch:
 	@${REINPLACE_CMD} -e 's|/usr/local|${LOCALBASE}|g' \
 		${BUILD_WRKSRC}/ssl/qsslsocket_openssl.cpp
