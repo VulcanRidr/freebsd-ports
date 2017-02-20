@@ -9,7 +9,7 @@ MAINTAINER=	feld@FreeBSD.org
 
 PLEX_BUILD=	77c6a4f80
 
-USE_RC_SUBR=	${PORTNAME}_plexpass
+USE_OPENRC_SUBR=	${PORTNAME}_plexpass
 
 MASTERDIR=${.CURDIR}/../plexmediaserver
 
