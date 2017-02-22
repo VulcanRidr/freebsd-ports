@@ -193,6 +193,7 @@
     SUBDIR += gallery3
     SUBDIR += gatling
     SUBDIR += gecko-mediaplayer
+    SUBDIR += geckodriver
     SUBDIR += geeklog
     SUBDIR += geeknote
     SUBDIR += geneweb
@@ -208,6 +209,7 @@
     SUBDIR += glpi
     SUBDIR += gnome-user-share
     SUBDIR += gnome-web-photo
+    SUBDIR += go-fasthttp
     SUBDIR += go-www
     SUBDIR += gohugo
     SUBDIR += google-appengine

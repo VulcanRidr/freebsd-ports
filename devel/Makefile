@@ -751,6 +751,8 @@
     SUBDIR += go-bindata
     SUBDIR += go-cobra
     SUBDIR += go-codec
+    SUBDIR += go-cpuid
+    SUBDIR += go-crc32
     SUBDIR += go-faker
     SUBDIR += go-form
     SUBDIR += go-glide
@@ -1274,7 +1276,7 @@
     SUBDIR += libev
     SUBDIR += libevdev
     SUBDIR += libevent-hiphop
-    SUBDIR += libevent2
+    SUBDIR += libevent
     SUBDIR += libevt
     SUBDIR += libevtx
     SUBDIR += libewf
@@ -1567,6 +1569,7 @@
     SUBDIR += lua-posix
     SUBDIR += lua-pty
     SUBDIR += lua-sysctl
+    SUBDIR += lua51-libevent
     SUBDIR += luabind
     SUBDIR += luafilesystem
     SUBDIR += luafilesystem-51
@@ -1591,6 +1594,7 @@
     SUBDIR += mcpp
     SUBDIR += mdds
     SUBDIR += mdds0
+    SUBDIR += memleax
     SUBDIR += menhir
     SUBDIR += mercator
     SUBDIR += mercurial
@@ -1653,6 +1657,7 @@
     SUBDIR += newtonsoft-json
     SUBDIR += nexus2-oss
     SUBDIR += nglogc
+    SUBDIR += nimble
     SUBDIR += nini
     SUBDIR += ninja
     SUBDIR += ninja-ide
@@ -4409,6 +4414,7 @@
     SUBDIR += py-mwlib.rl
     SUBDIR += py-mx-experimental
     SUBDIR += py-mygpoclient
+    SUBDIR += py-mypy
     SUBDIR += py-nagioscheck
     SUBDIR += py-natsort
     SUBDIR += py-natural
@@ -4906,6 +4912,7 @@
     SUBDIR += py3-python-magic
     SUBDIR += py3-pytz
     SUBDIR += py3-rubymarshal
+    SUBDIR += py3-setproctitle
     SUBDIR += py3-simplejson
     SUBDIR += py3-threema-msgapi
     SUBDIR += py3-vcversioner
@@ -5373,6 +5380,7 @@
     SUBDIR += rubygem-powerpack
     SUBDIR += rubygem-pqueue
     SUBDIR += rubygem-progressbar
+    SUBDIR += rubygem-progressbar09
     SUBDIR += rubygem-protected_attributes
     SUBDIR += rubygem-pry
     SUBDIR += rubygem-pry-rails
