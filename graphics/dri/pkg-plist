@@ -12,7 +12,6 @@
 @comment include/GL/glx_mangle.h
 @comment include/GL/glxext.h
 include/GL/internal/dri_interface.h
-@comment include/GL/mesa_glinterop.h
 @comment include/GL/osmesa.h
 @comment include/GLES2/gl2.h
 @comment include/GLES2/gl2ext.h

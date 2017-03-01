@@ -21,7 +21,6 @@ LIB_DEPENDS=	libpciaccess.so:devel/libpciaccess \
 USES=		libtool pkgconfig tar:bzip2
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
-CPPFLAGS+=	-Werror=uninitialized
 INSTALL_TARGET=	install-strip
 
 OPTIONS_DEFINE=	MANPAGES
@@ -72,7 +71,6 @@ PLIST_SUB+=	ARM_DRIVERS="@comment "
 PLIST_SUB+=	INTEL_DRIVER="@comment "
 PLIST_SUB+=	NOUVEAU_DRIVER="@comment "
 PLIST_SUB+=	RADEON_DRIVERS="@comment "
-PLIST_SUB+=	VC4_DRIVERS="@comment "
 .endif
 
 # This variable is not for users. So use a non-default name, intended for
