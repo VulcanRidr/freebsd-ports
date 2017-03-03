@@ -1365,6 +1365,7 @@
     SUBDIR += py3-hunspell
     SUBDIR += py3-libxml2
     SUBDIR += py3-pager
+    SUBDIR += py3-sphinx
     SUBDIR += pychm
     SUBDIR += qprint
     SUBDIR += qrcodegen
