@@ -1370,6 +1370,7 @@
     SUBDIR += py3-hunspell
     SUBDIR += py3-libxml2
     SUBDIR += py3-pager
+    SUBDIR += py3-pystemmer
     SUBDIR += py3-sphinx
     SUBDIR += py3-sphinx_rtd_theme
     SUBDIR += py3-snowballstemmer
