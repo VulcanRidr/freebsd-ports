@@ -3,6 +3,7 @@
 
 PORTNAME=	sphinx
 PORTVERSION=	1.4.8
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
@@ -34,10 +35,5 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Babel>=1.3:devel/py-babel\
 USES=		python
 USE_PYTHON=	autoplist distutils
 NO_ARCH=	yes
-
-post-build:
-	cd ${WRKSRC}/build/lib && \
-	${SETENV} PYTHONPATH=${WRKSRC}/build/lib:${PYTHONPREFIX_SITELIBDIR} \
-	${PYTHON_CMD} -m sphinx.pycode.pgen2.driver -c 'import load_grammar'
 
 .include <bsd.port.mk>
