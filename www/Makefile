@@ -179,6 +179,7 @@
     SUBDIR += formication
     SUBDIR += foswiki
     SUBDIR += fpc-fastcgi
+    SUBDIR += fpc-googleapi
     SUBDIR += fpc-httpd22
     SUBDIR += fpc-httpd24
     SUBDIR += free-sa-devel
@@ -1505,9 +1506,7 @@
     SUBDIR += publicfile
     SUBDIR += punbb
     SUBDIR += pwebstats
-    SUBDIR += py-GinGin
     SUBDIR += py-HTMLgen
-    SUBDIR += py-Lightbox
     SUBDIR += py-MechanicalSoup
     SUBDIR += py-Products.CMFPlone
     SUBDIR += py-Products.PloneLDAP
@@ -1818,7 +1817,6 @@
     SUBDIR += py-routes
     SUBDIR += py-scgi
     SUBDIR += py-scrapy
-    SUBDIR += py-scriptaculous
     SUBDIR += py-seafdav
     SUBDIR += py-seafobj
     SUBDIR += py-searx
@@ -1832,11 +1830,9 @@
     SUBDIR += py-spyne
     SUBDIR += py-surl
     SUBDIR += py-textile
-    SUBDIR += py-tgwebservices
     SUBDIR += py-tmdb3
     SUBDIR += py-tornado
     SUBDIR += py-trello
-    SUBDIR += py-turbogears
     SUBDIR += py-turbogears2
     SUBDIR += py-tvdb_api
     SUBDIR += py-twistedWeb
@@ -1969,6 +1965,7 @@
     SUBDIR += rubygem-gitlab-grack
     SUBDIR += rubygem-gollum-grit_adapter
     SUBDIR += rubygem-gollum-lib
+    SUBDIR += rubygem-gollum-lib-gitlab
     SUBDIR += rubygem-gollum-rugged_adapter
     SUBDIR += rubygem-gon
     SUBDIR += rubygem-gon-rails4
@@ -2017,7 +2014,6 @@
     SUBDIR += rubygem-link_header
     SUBDIR += rubygem-maruku
     SUBDIR += rubygem-mechanize
-    SUBDIR += rubygem-mechanize26
     SUBDIR += rubygem-merb-assets
     SUBDIR += rubygem-merb-core
     SUBDIR += rubygem-merb-haml
@@ -2028,9 +2024,8 @@
     SUBDIR += rubygem-nanoc
     SUBDIR += rubygem-nested_form
     SUBDIR += rubygem-net-http-digest_auth
-    SUBDIR += rubygem-net-http-digest_auth11
     SUBDIR += rubygem-net-http-persistent
-    SUBDIR += rubygem-net-http-persistent25
+    SUBDIR += rubygem-net-http-persistent2
     SUBDIR += rubygem-net-http-pipeline
     SUBDIR += rubygem-nicovideo
     SUBDIR += rubygem-ntlm-http
@@ -2051,7 +2046,6 @@
     SUBDIR += rubygem-rack-protection
     SUBDIR += rubygem-rack-ssl
     SUBDIR += rubygem-rack-test
-    SUBDIR += rubygem-rack14
     SUBDIR += rubygem-rack15
     SUBDIR += rubygem-rack16
     SUBDIR += rubygem-rails4

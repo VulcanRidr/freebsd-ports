@@ -28,6 +28,7 @@
     SUBDIR += aird
     SUBDIR += am-utils
     SUBDIR += amazon-ssm-agent
+    SUBDIR += amdmsrtweaker
     SUBDIR += amrstat
     SUBDIR += amtc
     SUBDIR += anacron
@@ -91,7 +92,7 @@
     SUBDIR += bchunk
     SUBDIR += beadm
     SUBDIR += beadm-devel
-    SUBDIR += beats 
+    SUBDIR += beats
     SUBDIR += bhyve-firmware
     SUBDIR += bhyve-rc
     SUBDIR += biosfont
@@ -537,7 +538,6 @@
     SUBDIR += lineakd
     SUBDIR += linrename
     SUBDIR += linux-crashplan
-    SUBDIR += linux-nero
     SUBDIR += linuxfdisk
     SUBDIR += livecd
     SUBDIR += lmmon
@@ -612,6 +612,7 @@
     SUBDIR += mksunbootcd
     SUBDIR += mnrpes
     SUBDIR += modules
+    SUBDIR += mog
     SUBDIR += monit
     SUBDIR += monitord
     SUBDIR += monitorix
@@ -649,6 +650,7 @@
     SUBDIR += munin-node
     SUBDIR += muse
     SUBDIR += mybashburn
+    SUBDIR += myrescue
     SUBDIR += n98-magerun
     SUBDIR += nagios-statd
     SUBDIR += namefix
@@ -1243,7 +1245,6 @@
     SUBDIR += wtail
     SUBDIR += wuzzah
     SUBDIR += x86info
-    SUBDIR += xacpim
     SUBDIR += xbatt
     SUBDIR += xbattbar
     SUBDIR += xcdroast
