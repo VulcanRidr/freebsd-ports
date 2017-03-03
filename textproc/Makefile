@@ -1366,6 +1366,7 @@
     SUBDIR += py3-libxml2
     SUBDIR += py3-pager
     SUBDIR += py3-sphinx
+    SUBDIR += py3-snowballstemmer
     SUBDIR += pychm
     SUBDIR += qprint
     SUBDIR += qrcodegen
