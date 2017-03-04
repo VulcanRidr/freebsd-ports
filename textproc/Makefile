@@ -1367,6 +1367,7 @@
     SUBDIR += py3-alabaster
     SUBDIR += py3-asciinema
     SUBDIR += py3-chardet
+    SUBDIR += py3-docutils
     SUBDIR += py3-hunspell
     SUBDIR += py3-libxml2
     SUBDIR += py3-pager

@@ -14,12 +14,12 @@ COMMENT=	Python Documentation Utilities
 LICENSE=	BSD2CLAUSE GPLv3+ PD PSFL
 LICENSE_COMB=	multi
 
-USES=	python
+USES?=	python
 USE_PYTHON=	distutils concurrent autoplist
 NO_ARCH=	yes
 
 OPTIONS_DEFINE=	PYGMENTS
-PYGMENTS_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pygments>=1.6:textproc/py-pygments
+PYGMENTS_RUN_DEPENDS?=	${PYTHON_PKGNAMEPREFIX}pygments>=1.6:textproc/py-pygments
 PYGMENTS_DESC=	Syntax highlighting
 
 BIN_SCRIPTS=	rst2html.py rst2s5.py rst2latex.py rst2xetex.py \
