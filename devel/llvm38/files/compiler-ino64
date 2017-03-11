@@ -1,0 +1,45 @@
+--- lib/sanitizer_common/sanitizer_linux.cc.orig	2017-03-08 22:20:15.159064000 -0500
++++ lib/sanitizer_common/sanitizer_linux.cc	2017-03-08 23:05:32.967711000 -0500
+@@ -223,7 +223,8 @@
+ 
+ uptr internal_stat(const char *path, void *buf) {
+ #if SANITIZER_FREEBSD
+-  return internal_syscall(SYSCALL(stat), path, buf);
++  return internal_syscall(SYSCALL(fstatat), AT_FDCWD, (uptr)path,
++                          (uptr)buf, 0);
+ #elif SANITIZER_USES_CANONICAL_LINUX_SYSCALLS
+   return internal_syscall(SYSCALL(newfstatat), AT_FDCWD, (uptr)path,
+                           (uptr)buf, 0);
+@@ -247,7 +248,8 @@
+ 
+ uptr internal_lstat(const char *path, void *buf) {
+ #if SANITIZER_FREEBSD
+-  return internal_syscall(SYSCALL(lstat), path, buf);
++  return internal_syscall(SYSCALL(fstatat), AT_FDCWD, (uptr)path,
++                         (uptr)buf, AT_SYMLINK_NOFOLLOW);
+ #elif SANITIZER_USES_CANONICAL_LINUX_SYSCALLS
+   return internal_syscall(SYSCALL(newfstatat), AT_FDCWD, (uptr)path,
+                          (uptr)buf, AT_SYMLINK_NOFOLLOW);
+@@ -590,7 +592,9 @@
+ }
+ 
+ uptr internal_getdents(fd_t fd, struct linux_dirent *dirp, unsigned int count) {
+-#if SANITIZER_USES_CANONICAL_LINUX_SYSCALLS
++#if SANITIZER_FREEBSD
++  return internal_syscall(SYSCALL(getdirentries), fd, (uptr)dirp, count, NULL);
++#elif SANITIZER_USES_CANONICAL_LINUX_SYSCALLS
+   return internal_syscall(SYSCALL(getdents64), fd, (uptr)dirp, count);
+ #else
+   return internal_syscall(SYSCALL(getdents), fd, (uptr)dirp, count);
+--- lib/sanitizer_common/sanitizer_platform_limits_posix.h.orig	2017-03-08 23:19:12.365754000 -0500
++++ lib/sanitizer_common/sanitizer_platform_limits_posix.h	2017-03-08 23:26:10.381778000 -0500
+@@ -440,7 +440,8 @@
+   };
+ #elif SANITIZER_FREEBSD
+   struct __sanitizer_dirent {
+-    unsigned int d_fileno;
++    unsigned long long d_fileno;
++    unsigned long long d_off;
+     unsigned short d_reclen;
+     // more fields that we don't care about
+   };
