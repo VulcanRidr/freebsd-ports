@@ -322,6 +322,7 @@ post-patch-CLANG-on:
 
 post-patch-COMPILER_RT-on:
 	cd ${WRKSRC_compiler_rt} && patch < ${PATCHDIR}/compiler-rt-patch-svn-294806
+	cd ${WRKSRC_compiler_rt} && patch < ${PATCHDIR}/compiler-ino64
 
 post-build-COMPILER_RT-on:
 	${MKDIR} ${WRKDIR}/compiler-rt-build
