@@ -2,8 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	tarantool
-PORTVERSION=	1.7.3.318
-PORTREVISION=	1
+PORTVERSION=	1.7.4.0
 CATEGORIES=	databases
 MASTER_SITES=	http://download.tarantool.org/tarantool/1.7/src/
 
@@ -12,7 +11,7 @@ COMMENT=	NoSQL database running in a Lua application server
 
 LICENSE=	BSD2CLAUSE
 
-BROKEN_powerpc64=	Does not build
+BROKEN_powerpc64=	Does not build: Unsupported architecture -- powerpc64
 
 MAKE_JOBS_UNSAFE=yes
 USES=		cmake compiler:c++11-lang gettext gmake perl5 readline

@@ -3,6 +3,7 @@
 
 PORTNAME=	synfigstudio
 PORTVERSION=	1.0.2
+PORTREVISION=	1
 CATEGORIES=	graphics multimedia
 MASTER_SITES=	SF/synfig/releases/${PORTVERSION}/source
 
@@ -10,6 +11,8 @@ MAINTAINER=	woodsb02@FreeBSD.org
 COMMENT=	Vector-based 2D animation software package
 
 LICENSE=	GPLv2+
+
+BROKEN=		missing header
 
 BUILD_DEPENDS=	etl>=0.04.19_1:devel/etl
 LIB_DEPENDS=	libsynfig.so:devel/synfig

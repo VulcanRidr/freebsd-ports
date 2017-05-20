@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	django
-PORTVERSION=	1.11
+PORTVERSION=	1.11.1
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP \
 		https://www.djangoproject.com/m/releases/${PORTVERSION}/
@@ -18,8 +18,10 @@ LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 NO_ARCH=	yes
-USES=		cpe python
+USES=		cpe python shebangfix
 USE_PYTHON=	autoplist distutils
+SHEBANG_FILES=	django/conf/project_template/manage.py-tpl \
+		django/bin/django-admin.py
 
 CONFLICTS_INSTALL=	py??-django-devel-* py??-django1[689]-* py??-django110-*
 CPE_VENDOR=		djangoproject

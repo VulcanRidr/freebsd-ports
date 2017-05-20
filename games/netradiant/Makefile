@@ -3,7 +3,7 @@
 
 PORTNAME=	netradiant
 PORTVERSION=	20130630
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	games cad
 MASTER_SITES=	http://ingar.satgnu.net/gtkradiant/files/ \
 		http://freebsd.nsu.ru/distfiles/
@@ -33,6 +33,7 @@ SUB_LIST=	ARCH=${ARCH}
 PLIST_SUB:=	${SUB_LIST}
 
 BROKEN_aarch64=		Fails to link: ldd: install/modules/archivepak.so: not a FreeBSD ELF shared object
+BROKEN_armv6=		Fails to build: h2data.armv6: No such file or directory
 
 post-patch:
 # Add missing checks for __FreeBSD__

@@ -2095,9 +2095,7 @@ security/libfwbuilder||2011-05-02|libfwbuilder merged into fwbuilder
 games/monopd||2011-05-03|Removed, depends on an expired library: devel/libcapsinetwork
 devel/libcapsinetwork||2011-05-03|Has expired: Upstream disappeared and distfile is no longer available
 audio/albumart||2011-05-03|Has expired: Upstream disappeared and distfile is no longer available
-audio/aylet||2011-05-03|Has expired: Upstream disappeared and distfile is no longer available
 audio/cantus||2011-05-03|Has expired: Upstream disappeared and distfile is no longer available
-audio/xaylet||2011-05-03|Has expired: Upstream disappeared and distfile is no longer available
 science/oases||2011-05-03|Has expired: Upstream disappeared and distfile is no longer available
 shells/pash||2011-05-03|Has expired: Upstream disappeared and distfile is no longer available
 www/codeigniter-devel||2011-05-03|Removed
@@ -6368,7 +6366,7 @@ devel/kyua-atf-compat|devel/kyua|2014-08-14|Upstream merged all components into 
 devel/kyua-cli|devel/kyua|2014-08-14|Upstream merged all components into devel/kyua
 devel/kyua-testers|devel/kyua|2014-08-14|Upstream merged all components into devel/kyua
 devel/glib-java||2014-08-14|Has expired: Unmaintained, outdated not depend on
-www/phpgedview|www/webtrees|2014-08-15|Has expired: Superceded by www/webtrees
+www/phpgedview|www/webtrees|2014-08-15|Has expired: superseded by www/webtrees
 graphics/luxrays||2014-08-15|Has expired: No longer needed as luxrender bundles its own verion now
 net-mgmt/cflowd||2014-08-15|Has expired: Unmaintained 10 years, requires dozens of patches, unverifiable
 archivers/unzip-iconv|archivers/unzip|2014-08-15|Merged with archivers/unzip as a new non-default option
@@ -7546,8 +7544,8 @@ www/rubygem-taggable|www/rubygem-acts_as_taggable|2015-05-23|Rename to match our
 security/rubygem-meterpreter_bins|security/rubygem-metasploit-payloads|2015-05-23|Renamed upstream
 textproc/rubygem-augeas|textproc/rubygem-ruby-augeas|2015-05-23|Rename to match our rubygems naming
 textproc/rubygem-xslt|textproc/rubygem-ruby-xslt|2015-05-24|Rename to match our rubygems naming
-net-mgmt/glpi-plugins-tracker-agent|net-mgmt/glpi-plugins-fusioninventory-server|2015-05-24|Has expired: superceded by net-mgmt/glpi-plugins-fusioninventory-server
-net-mgmt/glpi-plugins-tracker-server|net-mgmt/glpi-plugins-fusioninventory-server|2015-05-24|Has expired: superceded by net-mgmt/glpi-plugins-fusioninventory-server
+net-mgmt/glpi-plugins-tracker-agent|net-mgmt/glpi-plugins-fusioninventory-server|2015-05-24|Has expired: superseded by net-mgmt/glpi-plugins-fusioninventory-server
+net-mgmt/glpi-plugins-tracker-server|net-mgmt/glpi-plugins-fusioninventory-server|2015-05-24|Has expired: superseded by net-mgmt/glpi-plugins-fusioninventory-server
 science/rubygem-netcdf|science/rubygem-ruby-netcdf|2015-05-24|Rename to match our rubygems naming
 security/rubygem-rc4|security/rubygem-ruby-rc4|2015-05-24|Rename to match our rubygems naming
 print/rubygem-colortools|print/rubygem-color-tools|2015-05-24|Rename to match our rubygems naming
@@ -7604,7 +7602,6 @@ multimedia/avidemux26-qt4|multimedia/avidemux-qt4|2015-06-13|Renamed
 editors/zim|deskutils/zim|2015-06-18|Move to more appropriate category
 net/py-ldap2|net/py-ldap|2015-06-18|Rename to better match upstream name
 devel/erlang-mustache|devel/erlang-bbmustache|2015-06-21|Renamed upstream
-security/py-backports.ssl_match_hostname||2015-06-23|This functionality was backported to python 2.7.9
 dns/maradns1|dns/maradns|2015-06-23|Has expired: MaraDNS 1 end-of-life: June 21, 2015, use dns/maradns
 net/py-soappy-devel||2015-06-25|Please use net/py-soappy instead. It's fresher than -devel
 devel/armv6-freebsd10.0-xdev||2015-06-27|Not usable for the purpose it has been intended for
@@ -7929,7 +7926,6 @@ graphics/pure-gl||2015-11-28|Has expired: Broken for more than 6 months
 audio/dvda-author||2015-11-28|Has expired: Broken for more than 6 months
 chinese/oxim||2015-11-28|Has expired: Broken for more than 6 months
 editors/spe||2015-11-28|Has expired: Broken for more than 6 months
-audio/mpdscribble||2015-11-28|Has expired: Broken for more than 6 months
 cad/geda-symcheck||2015-11-28|Has expired: Broken for more than 6 months
 audio/linux-fmodapi||2015-11-28|Has expired: Broken for more than 6 months
 audio/pure-audio||2015-11-28|Has expired: Broken for more than 6 months
@@ -8337,7 +8333,7 @@ www/drupal6-nice_menus||2016-06-18|Has expired: www/drupal6 upstream is EOL and 
 www/drupal6-page_title||2016-06-18|Has expired: www/drupal6 upstream is EOL and port expired 2016-04-24
 www/drupal6-cck||2016-06-18|Has expired: www/drupal6 upstream is EOL and port expired 2016-04-24
 www/drupal6||2016-06-18|Has expired: EOL upstream as of 2016-02-24
-x11-toolkits/gtk-sharp10||2016-06-20|Not depend on anymore superceeded by gtk-sharp20 and gtk-sharp30
+x11-toolkits/gtk-sharp10||2016-06-20|Nothing depends on it; superseded by gtk-sharp20 and gtk-sharp30
 devel/p5-ReadLine-Perl|devel/p5-Term-ReadLine-Perl|2016-06-21|Duplicates
 devel/p5-ReadLine-Gnu|devel/p5-Term-ReadLine-Gnu|2016-06-21|Rename to match upstream
 devel/p5-ReadLine-TTYtter|devel/p5-Term-ReadLine-TTYtter|2016-06-21|Rename to match upstream
@@ -8482,7 +8478,6 @@ mail/atmail||2016-07-04|Has expired: Broken for more than 6 months
 mail/ml||2016-07-04|Has expired: Broken for more than 6 months
 net-im/icb||2016-07-04|Has expired: Broken for more than 6 months
 net-im/cicquin||2016-07-04|Has expired: Broken for more than 6 months
-net-im/pidgin-manualsize||2016-07-04|Has expired: Broken for more than 6 months
 net-im/pidgin-rhythmbox||2016-07-04|Has expired: Broken for more than 6 months
 russian/eric4||2016-07-04|Has expired: Depends on expiring devel/eric4
 russian/fortune-bashorgru||2016-07-04|Has expired: Broken for more than 6 months
@@ -8578,7 +8573,7 @@ devel/capstone|devel/capstone3|2016-07-10|Moved to a numbered port name to make 
 net-mgmt/unifi3|net-mgmt/unifi4|2016-07-10|Has expired: Unifi 3.x is EoL. Please upgrade to net-mgmt/unifi4
 net/lam||2016-07-12|Has expired: Broken for more than 6 months
 java/wildfly82||2016-07-17|Has expired: Fully EOL when version 10.0 was released
-print/tex|print/texlive-base|2016-07-30|Superceeded by texlive
+print/tex|print/texlive-base|2016-07-30|Superseded by texlive
 net/tridiavnc|net/tigervnc|2016-08-01|No upstream 2005
 lang/pypy3-devel|lang/pypy3|2016-08-04|Renamed to lang/pypy3
 net/qt5-enginio||2016-08-06|Has expired: Deprecated by upstream from Qt 5.6 on, do not use for development
@@ -8795,7 +8790,6 @@ editors/focuswriter-qt4|editors/focuswriter|2016-12-03|Qt4 support was dropped, 
 graphics/gtkdps||2016-12-04|Has expired: No more upstream. Not used in the ports tree
 security/gsfv||2016-12-04|Has expired: No more upstream
 misc/grun||2016-12-04|Has expired: No more upstream
-devel/py-argparse||2016-12-04|Has expired: Part of Python standard library for Python >= 2.7 and >= 3.2
 www/node7|www/node|2016-12-07|www/node is now www/node7
 databases/py-sqlalchemy06|databases/py-sqlalchemy10|2016-12-08|Has expired: Upstream has declared this version EoL: please migrate to databases/py-sqlalchemy10
 print/py-reportlab2|print/py-reportlab|2016-12-08|Has expired: no longer supported - use reportlab 3.x (py-reportlab) instead
@@ -8919,7 +8913,7 @@ www/rubygem-jekyll2|www/rubygem-jekyll|2016-12-31|Has expired: Use www/rubygem-j
 databases/rubygem-dm-devise||2016-12-31|Has expired: Not compatible with devel/rubygem-devise > 3
 devel/rubygem-sprockets211||2016-12-31|Has expired: Use devel/rubygem-sprockets or devel/rubygem-sprockets3 instead
 devel/p5-Parse-CPAN-Meta||2016-12-31|Has expired: Merged into devel/p5-CPAN-Meta 2.150008
-devel/jtag|devel/urjtag|2016-12-31|Has expired: development ceased 2003, superceded by devel/urjtag
+devel/jtag|devel/urjtag|2016-12-31|Has expired: development ceased in 2003, superseded by devel/urjtag
 x11-toolkits/linux-f10-tk85||2016-12-31|Removed
 x11-toolkits/linux-f10-blt||2016-12-31|Removed
 net-mgmt/unifi4|net-mgmt/unifi5|2017-01-01|Has expired: EoL as of 2017-01-01
@@ -9113,7 +9107,6 @@ devel/py-tgMochiKit||2017-03-03|Has expired: Development of this branch ceased
 www/py-Lightbox||2017-03-03|Has expired: Development of this branch ceased
 devel/py-ll-core||2017-03-04|Has expired: Long unmaintained, abandoned upstream
 net/tcpdump398|net/tcpdump|2017-03-05|Has expired: multiple security vulnerabilities; not updated since 2009
-databases/oracle8-client||2017-03-07|Has expired: Oracle 8 EOL by 10 years
 databases/oracle7-client||2017-03-07|Has expired: Oracle 7 EOL by 13 years
 databases/yasql||2017-03-07|Has expired: Dependent on deprecated oracle7-client
 databases/jdbc-oracle10g||2017-03-07|Has expired: Oracle 10g EOL almost 4 years
@@ -9166,6 +9159,7 @@ databases/py-sqlalchemy08|databases/py-sqlalchemy10|2017-03-29|Has expired: Upst
 devel/py3-meson||2017-03-30|Removed
 deskutils/kchmviewer-kde4|deskutils/kchmviewer|2017-03-31|Renamed to drop the -kde4 suffix
 emulators/ppsspp-qt4|emulators/ppsspp-qt5|2017-03-31|Qt4 support was removed upstream
+devel/arduino16|devel/arduino18|2017-03-31|Renamed to match major version following upgrade
 devel/llvm37||2017-04-01|Obsolete and unmaintained upstream
 lang/clang37||2017-04-01|Obsolete and unmaintained upstream
 devel/lldb37||2017-04-01|Obsolete and unmaintained upstream
@@ -9211,8 +9205,8 @@ databases/rubygem-redis-actionpack4|databases/rubygem-redis-actionpack|2017-04-1
 devel/rubygem-nio4r1|devel/rubygem-nio4r|2017-04-10|Has expired: Use devel/rubygem-nio4r instead
 devel/liborcus07|devel/liborcus|2017-04-10|Has expired: Deprecated by upstream, use devel/liborcus
 devel/mdds0|devel/mdds|2017-04-10|Has expired: Deprecated by upstream, use devel/mdds
-security/openvpn23-polarssl||2017-04-10|Has expired: Replaced by new upstream relesae 2.4.x
-security/openvpn23|security/openvpn|2017-04-10|Has expired: Replaced by new upstream relesae 2.4.x
+security/openvpn23-polarssl||2017-04-10|Has expired: Replaced by new upstream release 2.4.x
+security/openvpn23|security/openvpn|2017-04-10|Has expired: Replaced by new upstream release 2.4.x
 textproc/p5-XML-XSH||2017-04-10|Has expired: Deprecated by upstream
 www/rubygem-jquery-atwho-rails-rails4|www/rubygem-jquery-atwho-rails|2017-04-10|Has expired: Use www/rubygem-jquery-atwho-rails instead
 www/p5-Catalyst-Plugin-Singleton||2017-04-10|Has expired: Deprecated by upstream
@@ -9234,3 +9228,166 @@ graphics/opencv2-java|graphics/opencv-java|2017-04-14|Revert previous rename
 graphics/py-opencv2|graphics/py-opencv|2017-04-14|Revert previous rename
 databases/pgpool-II-22|databases/pgpool|2017-04-14|Has expired: Deprecated by upstream; use database/pgpool instead
 databases/pgpool-II-23|databases/pgpool|2017-04-14|Has expired: Deprecated by upstream; use database/pgpool instead
+net/py-matrix-synapse|net-im/py-matrix-synapse|2017-04-17|Move to net-im which is a more appropriate category
+graphics/shiva-collections||2017-04-17|Has expired: Project is dead and has no end user
+graphics/opengtl||2017-04-17|Has expired: Project is dead, has no end user, and relies on EOLed LLVM
+graphics/qtgtl||2017-04-17|Has expired: Project is dead and has had no consumer for over a year
+www/py-django16|www/py-django18|2017-04-19|Has expired: End of extended support: April 1, 2015
+www/py-django16-tastypie|www/py-django-tastypie|2017-04-19|Removed, uses expired Django version
+www/py-django-pipeline13|www/py-django-pipeline|2017-04-19|Has expired: Depends on expired www/py-django16, and expired upstream
+www/py-djblets||2017-04-19|Has expired: Does not build with py-django18 see pr: 216758
+security/py-crits||2017-04-19|Has expired: Does not build with py-django18 see pr: 216758
+www/py-cactus||2017-04-19|Removed, depends on expired Django version
+devel/py-django16-tastypie-mongoengine|devel/py-django-tastypie-mongoengine|2017-04-19|Removed, uses expired Django version
+devel/freeocl|lang/pocl|2017-04-19|Has expired: Unfetchable for more than six months (google code has gone away); use lang/pocl instead
+net/librsync|net/librsync2|2017-04-28|Unmaintained, CVE-2014-8242, use net/librsync2 instead
+devel/stormlib-ghost++||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+devel/py-coil||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+devel/py-cmdln||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+devel/privman||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+devel/c-unit||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+devel/py-px||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+devel/nglogc||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+devel/bncsutil-ghost++||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+devel/liblouisxml||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+devel/nxt-python||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+devel/spdict||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+devel/guiloader-c++||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+devel/streamhtmlparser||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+devel/winpdb||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+net/opendpi||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+net/py-pybeanstalk||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+net-im/qwit||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+net-im/linux-instantbird||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+net-im/jabber-pyicq||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+net-im/qwit-devel||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+net-im/naim||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+net-im/pwytter||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+sysutils/sievelog||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+sysutils/ldapenter||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+sysutils/py-danzfs||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+sysutils/plasma-applet-apcups||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+sysutils/scanmem||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+sysutils/pdsh||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+deskutils/superswitcher||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+deskutils/plasma-applet-playwolf||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+deskutils/nagaina||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+deskutils/vboxgtk||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+deskutils/libgcal||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+math/carve||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+math/foma||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+math/libjbigi||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+multimedia/gcap||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+multimedia/freetuxtv||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+multimedia/bangarang||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+multimedia/opencinematools||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+multimedia/vstream-client||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+biology/treeviewx||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+www/pylot||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+www/xpi-pencil||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+www/mod_myvhost||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+www/feedonfeeds||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+www/mod_jail||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+www/jspacker||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+www/cocoon||2017-04-30|Has expired: Overly complex port with no maintainer since 2008, requires openjdk 1.6
+www/mod_authz_unixgroup24||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+www/trac-down||2017-04-30|Has expired: Upstream is gone
+www/tengine||2017-04-30|Removed
+www/arora||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+www/py-postmarkup||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+www/py-dotcloud.cli||2017-04-30|Has expired: deprecated in upstream
+www/closure-linter||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+www/httpsqs||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+www/sventon||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+www/mod_authnz_external22||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+www/mod_authn_otp||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+www/php-plurk-api||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+www/py-django-app-plugins||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+www/mod_authz_unixgroup22||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+www/squidstats||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+www/mod_log_firstbyte||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+www/gaeo||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+www/xpi-pentadactyl||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+net-mgmt/py-flowtools||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+chinese/ydict||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+chinese/py-cconv||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+chinese/fqterm||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+chinese/libgooglepinyin||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+chinese/p5-cconv||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+chinese/fcitx-googlepinyin||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+chinese/php-cconv||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+chinese/ibus-table-chinese||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+databases/jdbm2||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+databases/akonadi-googledata||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+lang/ofc||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+comms/esmska||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+x11/keynav||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+x11/hotwire-shell||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+security/fuzzdb||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+security/truecrack||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+security/skipfish||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+security/py-yara-editor||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+security/nmapsi4||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+security/cmd5checkpw||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+net-p2p/unworkable||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+net-p2p/rtgui||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+audio/xpi-musicpm||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+audio/pidgin-musictracker||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+audio/logitechmediaserver-superdatetime||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+audio/last-cmus||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+audio/mehdiaplayer||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+japanese/nhocr||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+misc/xsw||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+dns/py-adns||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+dns/py-bonjour||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+games/robocalypto||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+games/libfov||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+games/dcross||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+games/lostfeathers||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+games/hexglass||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+textproc/ibus-table||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+textproc/chm2pdf||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+textproc/dtdinst||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+textproc/py-xmltv||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+textproc/ibus-m17n||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+textproc/libroxml||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+mail/gnome-gmail-notifier||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+irc/py-gozerbot||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+irc/tircd||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+graphics/qiviewer||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+graphics/py-gchartwrapper||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+graphics/svgfig||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+graphics/iulib||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+graphics/seam-carving-gui||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+graphics/py-pyggel||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+graphics/rubygem-gemojione2||2017-04-30|Has expired: Use graphics/rubygem-gemojione instead
+deskutils/epoch||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+graphics/ocropus||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+net/clamz||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+misc/terraform||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+net-mgmt/flow-tools-ng||2017-04-30|Has expired: Unfetchable for more than six months (google code has gone away)
+devel/llvm36||2017-05-02|Obsolete and unmaintained upstream
+lang/clang36||2017-05-02|Obsolete and unmaintained upstream
+lang/ruby21||2017-05-02|Has expired: Upstream support ended
+devel/guiloader||2017-05-05|Unfetchable for more than six months (google code has gone away)
+audio/ufmcontrol-i18n||2017-05-07|Unfetchable for more than six months (google code has gone away)
+devel/ccons||2017-05-07|Has expired: Unfetchable for more than six months (google code has gone away)
+chinese/fortune||2017-05-07|Has expired: Unfetchable for more than six months (google code has gone away)
+benchmarks/gobench||2017-05-07|Has expired: Builds each time it runs
+sysutils/grok||2017-05-07|Has expired: Unfetchable for more than six months (google code has gone away)
+audio/xaylet|audio/aylet|2017-05-07|Moved to a single port with GUI option
+graphics/dri|graphics/mesa-dri|2017-05-12|Renamed for clarity and consistency with graphics/mesa-libs
+graphics/gbm|graphics/mesa-libs|2017-05-12|Mesa libraries were merged into one port
+graphics/libglapi|graphics/mesa-libs|2017-05-12|Mesa libraries were merged into one port
+graphics/libglesv2|graphics/mesa-libs|2017-05-12|Mesa libraries were merged into one port
+graphics/libEGL|graphics/mesa-libs|2017-05-12|Mesa libraries were merged into one port
+graphics/libGL|graphics/mesa-libs|2017-05-12|Mesa libraries were merged into one port
+multimedia/rubygem-av-rails5||2017-05-15|Has expired: Use multimedia/rubygem-av instead
+devel/rubygem-cocaine-rails5||2017-05-15|Has expired: Use devel/rubygem-cocaine instead
+devel/rubygem-climate_control-rails5||2017-05-15|Has expired: Use devel/rubygem-climate_control instead
+net/py-twitter|net/py-python-twitter|2017-05-15|Renamed to reflect official name at PyPI/Github
+sysutils/bsdadminscripts|ports-mgmt/bsdadminscripts|2017-05-17|Move into more appropiate category
+games/ioquake3-devel|games/ioquake3|2017-05-18|GitHub master is the new release model
+games/ioquake3-devel-server|games/ioquake3-server|2017-05-18|GitHub master is the new release model
+devel/rubygem-generator_spec|devel/rubygem-generator_spec-rails5|2017-05-19|Use devel/rubygem-generator_spec-rails4 or devel/rubygem-generator_spec-rails5
+deskutils/openproj|deskutils/projectlibre|2017-05-19|Has expired: Development ceased, superseded by deskutils/projectlibre

@@ -24,13 +24,17 @@
     SUBDIR += R-cran-dygraphs
     SUBDIR += R-cran-ggplot2
     SUBDIR += R-cran-gridBase
+    SUBDIR += R-cran-gridExtra
     SUBDIR += R-cran-munsell
     SUBDIR += R-cran-pixmap
     SUBDIR += R-cran-png
+    SUBDIR += R-cran-qcc
     SUBDIR += R-cran-rgdal
     SUBDIR += R-cran-rtiff
     SUBDIR += R-cran-scales
     SUBDIR += R-cran-shape
+    SUBDIR += R-cran-viridis
+    SUBDIR += R-cran-viridisLite
     SUBDIR += R-cran-visNetwork
     SUBDIR += SciPlot
     SUBDIR += a2png
@@ -144,7 +148,6 @@
     SUBDIR += djview4-qt4
     SUBDIR += djvulibre
     SUBDIR += dmtx-utils
-    SUBDIR += dri
     SUBDIR += driconf
     SUBDIR += dspdfviewer
     SUBDIR += duhdraw
@@ -214,9 +217,9 @@
     SUBDIR += fyre
     SUBDIR += g2
     SUBDIR += gauche-gl
-    SUBDIR += gbm
     SUBDIR += gcolor
     SUBDIR += gcolor2
+    SUBDIR += gcolor3
     SUBDIR += gd
     SUBDIR += gdal
     SUBDIR += gdchart
@@ -296,6 +299,7 @@
     SUBDIR += gracula
     SUBDIR += grads
     SUBDIR += grafx2
+    SUBDIR += graphene
     SUBDIR += graphite2
     SUBDIR += graphopt
     SUBDIR += graphos
@@ -372,7 +376,6 @@
     SUBDIR += intergif
     SUBDIR += inventor
     SUBDIR += ipe
-    SUBDIR += iulib
     SUBDIR += jalbum
     SUBDIR += jasper
     SUBDIR += jave6
@@ -468,8 +471,6 @@
     SUBDIR += leptonica
     SUBDIR += lfview
     SUBDIR += lib3ds
-    SUBDIR += libEGL
-    SUBDIR += libGL
     SUBDIR += libGLU
     SUBDIR += libGLw
     SUBDIR += libafterimage
@@ -492,8 +493,6 @@
     SUBDIR += libgaiagraphics
     SUBDIR += libgeotiff
     SUBDIR += libgfx
-    SUBDIR += libglapi
-    SUBDIR += libglesv2
     SUBDIR += libgltext
     SUBDIR += libgltf
     SUBDIR += libgnomecanvas
@@ -543,6 +542,7 @@
     SUBDIR += libwmf-nox11
     SUBDIR += libwpg03
     SUBDIR += libyuv
+    SUBDIR += libzmf
     SUBDIR += lightzone
     SUBDIR += linplasma
     SUBDIR += linux-adobesvg
@@ -587,6 +587,8 @@
     SUBDIR += mapyrus
     SUBDIR += megapov
     SUBDIR += mesa-demos
+    SUBDIR += mesa-dri
+    SUBDIR += mesa-libs
     SUBDIR += meshviewer
     SUBDIR += metacam
     SUBDIR += metapixel
@@ -615,7 +617,6 @@
     SUBDIR += ocaml-lablgl
     SUBDIR += ocrad
     SUBDIR += ocre
-    SUBDIR += ocropus
     SUBDIR += ogre3d
     SUBDIR += okular
     SUBDIR += opencollada
@@ -627,7 +628,6 @@
     SUBDIR += opencv-java
     SUBDIR += opendx
     SUBDIR += opengl-man
-    SUBDIR += opengtl
     SUBDIR += openimageio
     SUBDIR += openjpeg
     SUBDIR += openjpeg15
@@ -762,6 +762,7 @@
     SUBDIR += pecomato
     SUBDIR += pencil
     SUBDIR += peps
+    SUBDIR += perceptualdiff
     SUBDIR += pfscalibration
     SUBDIR += pfstmo
     SUBDIR += pfstools
@@ -838,12 +839,12 @@
     SUBDIR += py-cairocffi
     SUBDIR += py-chart
     SUBDIR += py-django-easy-thumbnails
+    SUBDIR += py-djvulibre
     SUBDIR += py-editobj
     SUBDIR += py-exif
     SUBDIR += py-exifread
     SUBDIR += py-exiv2
     SUBDIR += py-freeimagepy
-    SUBDIR += py-gchartwrapper
     SUBDIR += py-gd
     SUBDIR += py-gdal
     SUBDIR += py-gimp
@@ -877,9 +878,9 @@
     SUBDIR += py-pycha
     SUBDIR += py-pycollada
     SUBDIR += py-pydot
+    SUBDIR += py-pyembree
     SUBDIR += py-pygal
     SUBDIR += py-pyganim
-    SUBDIR += py-pyggel
     SUBDIR += py-pyglet
     SUBDIR += py-pygooglechart
     SUBDIR += py-pygraphviz
@@ -907,7 +908,6 @@
     SUBDIR += qcomicbook
     SUBDIR += qgis
     SUBDIR += qiv
-    SUBDIR += qiviewer
     SUBDIR += qslim
     SUBDIR += qt4-iconengines
     SUBDIR += qt4-imageformats
@@ -921,7 +921,6 @@
     SUBDIR += qt5-pixeltool
     SUBDIR += qt5-svg
     SUBDIR += qtawesome
-    SUBDIR += qtgtl
     SUBDIR += quat
     SUBDIR += quat-gui
     SUBDIR += quesa
@@ -946,6 +945,7 @@
     SUBDIR += rubygem-captcha
     SUBDIR += rubygem-chunky_png
     SUBDIR += rubygem-clutter
+    SUBDIR += rubygem-clutter-gdk
     SUBDIR += rubygem-clutter-gtk
     SUBDIR += rubygem-dragonfly
     SUBDIR += rubygem-emoji
@@ -956,7 +956,6 @@
     SUBDIR += rubygem-gd2
     SUBDIR += rubygem-gdk_pixbuf2
     SUBDIR += rubygem-gemojione
-    SUBDIR += rubygem-gemojione2
     SUBDIR += rubygem-geokit
     SUBDIR += rubygem-gitlab_emoji
     SUBDIR += rubygem-goocanvas
@@ -993,7 +992,6 @@
     SUBDIR += sdl_image
     SUBDIR += sdl_ttf
     SUBDIR += sdump
-    SUBDIR += seam-carving-gui
     SUBDIR += seejpeg
     SUBDIR += seexpr
     SUBDIR += sekrit-twc-zimg
@@ -1002,7 +1000,6 @@
     SUBDIR += seq2gif
     SUBDIR += shared-color-profiles
     SUBDIR += sharpconstruct
-    SUBDIR += shiva-collections
     SUBDIR += shotwell
     SUBDIR += showimage
     SUBDIR += silgraphite
@@ -1020,7 +1017,6 @@
     SUBDIR += svg2pdf
     SUBDIR += svg2png
     SUBDIR += svgalib
-    SUBDIR += svgfig
     SUBDIR += swfdec
     SUBDIR += swfmill
     SUBDIR += swftools
