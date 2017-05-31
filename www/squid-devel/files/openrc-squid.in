@@ -1,9 +1,5 @@
-#!/sbin/openrc
+#!/sbin/openrc-run
 
-# Note:
-# Set "squid_enable=yes" in either /etc/rc.conf, /etc/rc.conf.local or
-# /etc/rc.conf.d/squid to activate Squid.
-#
 # Additional variables you can define in one of these files:
 #
 # squid_chdir:	the directory into which the rc system moves into before

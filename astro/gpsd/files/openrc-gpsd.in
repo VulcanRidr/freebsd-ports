@@ -19,6 +19,15 @@ pidfile=/var/run/$name.pid
 command=%%PREFIX%%/sbin/gpsd
 command_args="$gpsd_devices"
 
+start_post() {
+	cd ${gpxlogger_logdir}
+	gpx=$(date +"${gpxlogger_format}")
+	touch "${gpx}"
+}
+
 depend(){
+	use localmount
 	keyword -shutdown
+	provide gps
+	after bootmisc
 }
